@@ -21,7 +21,7 @@ plt.plot(x1, y3, label=r"$x_1 + 5x_2 \geq 5$", color='red')
 plt.fill_between(x1, np.maximum(0, y3), np.minimum(y1, y2), where=(np.minimum(y1, y2) >= np.maximum(0, y3)), color='gray', alpha=0.3, label="ОДР")
 
 # Линейная форма z(x) = x1 + 2x2 -> max/min
-z = (lambda x1: (10 - x1) / 2) 
+z = (lambda x1: (13 - x1) / 2) 
 plt.plot(x1, z(x1), label=r"$z = x_1 + 2x_2$", linestyle='--', color='orange')
 
 plt.xlim(0, 10)
